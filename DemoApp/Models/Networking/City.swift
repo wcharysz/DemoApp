@@ -12,7 +12,7 @@ protocol CityProtocol: Codable {
     var id: Int? {get set}
     var name: String? {get set}
     var countryCode: String? {get set}
-    var cod: Int? {get set}
+    var cod: String? {get set}
     var message: Float? {get set}
     var cnt: Int? {get set}
     var list: [List?]? {get set}
@@ -25,7 +25,7 @@ struct City: CityProtocol {
     var id: Int?
     var name: String?
     var countryCode: String?
-    var cod: Int?
+    var cod: String?
     var message: Float?
     var cnt: Int?
     var list: [List?]?

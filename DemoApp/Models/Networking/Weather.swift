@@ -11,7 +11,7 @@ import Foundation
 protocol WeatherProtocol: Codable {
     var id: Int? {get set}
     var main: String? {get set}
-    var description: String? {get set}
+    var weatherDescription: String? {get set}
     var icon: String? {get set}
 }
 
@@ -20,14 +20,14 @@ struct Weather: WeatherProtocol {
     
     var main: String?
     
-    var description: String?
+    var weatherDescription: String?
     
     var icon: String?
     
     enum CodingKeys: String, CodingKey {
         case id
         case main
-        case description
+        case weatherDescription = "description"
         case icon
     }
 }
