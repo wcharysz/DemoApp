@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="City Name" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gts-8g-2Jp">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="C8J-9a-AJS"/>
+                                </connections>
+                            </searchBar>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MX0-u1-2VX">
+                                <rect key="frame" x="0.0" y="700" width="414" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="vpu-BS-5em"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="mv5-0h-lP2"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hiR-bN-rjv"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Gts-8g-2Jp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Aaa-oQ-Ou4"/>
+                            <constraint firstItem="MX0-u1-2VX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Cp0-eX-Kqj"/>
+                            <constraint firstItem="Gts-8g-2Jp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Fu1-3T-J7x"/>
+                            <constraint firstItem="MX0-u1-2VX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WGh-4U-c8J"/>
+                            <constraint firstItem="Gts-8g-2Jp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZCo-HT-OwG"/>
+                            <constraint firstItem="MX0-u1-2VX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dKk-fx-aTe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="yLd-tV-WVT" appends="YES" id="70W-Vm-MgF"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="MX0-u1-2VX" id="VjK-eJ-arl"/>
+                        <outlet property="searchBar" destination="Gts-8g-2Jp" id="Vdv-kw-oyK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yLd-tV-WVT">
+                    <connections>
+                        <action selector="tapOnView:" destination="BYZ-38-t0r" id="sCW-a1-GDm"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
