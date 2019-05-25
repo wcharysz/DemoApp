@@ -15,10 +15,16 @@ protocol ListProtocol: Codable {
     var weather: [Weather?]? {get set}
     var clouds: Clouds? {get set}
     var wind: Wind? {get set}
+    var rain: Rain? {get set}
+    var snow: Snow? {get set}
     var sys: Sys? {get set}
 }
 
 struct List: ListProtocol {
+    var rain: Rain?
+    
+    var snow: Snow?
+    
     var dt: Date?
     
     var dtString: String?

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A596954B22994F9D001AFF9A /* Rain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596954A22994F9D001AFF9A /* Rain.swift */; };
+		A596954C22994F9D001AFF9A /* Rain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596954A22994F9D001AFF9A /* Rain.swift */; };
+		A596954E22995016001AFF9A /* Snow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596954D22995016001AFF9A /* Snow.swift */; };
+		A596954F22995016001AFF9A /* Snow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596954D22995016001AFF9A /* Snow.swift */; };
+		A59695512299505B001AFF9A /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59695502299505B001AFF9A /* Precipitation.swift */; };
+		A59695522299505B001AFF9A /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59695502299505B001AFF9A /* Precipitation.swift */; };
 		ABDE1F552296D49900F49F5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDE1F542296D49900F49F5A /* AppDelegate.swift */; };
 		ABDE1F572296D49900F49F5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDE1F562296D49900F49F5A /* ViewController.swift */; };
 		ABDE1F5A2296D49900F49F5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABDE1F582296D49900F49F5A /* Main.storyboard */; };
@@ -54,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A596954A22994F9D001AFF9A /* Rain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rain.swift; sourceTree = "<group>"; };
+		A596954D22995016001AFF9A /* Snow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snow.swift; sourceTree = "<group>"; };
+		A59695502299505B001AFF9A /* Precipitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Precipitation.swift; sourceTree = "<group>"; };
 		ABDE1F512296D49900F49F5A /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABDE1F542296D49900F49F5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABDE1F562296D49900F49F5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +217,9 @@
 				ABDE1F972296E05100F49F5A /* Weather.swift */,
 				ABDE1F9A2296E0D000F49F5A /* Clouds.swift */,
 				ABDE1F9D2296E1D400F49F5A /* Wind.swift */,
+				A59695502299505B001AFF9A /* Precipitation.swift */,
+				A596954A22994F9D001AFF9A /* Rain.swift */,
+				A596954D22995016001AFF9A /* Snow.swift */,
 				ABDE1FA02296E26D00F49F5A /* Sys.swift */,
 			);
 			path = Networking;
@@ -346,9 +358,12 @@
 			files = (
 				ABDE1F982296E05100F49F5A /* Weather.swift in Sources */,
 				ABDE1F9E2296E1D400F49F5A /* Wind.swift in Sources */,
+				A596954E22995016001AFF9A /* Snow.swift in Sources */,
 				ABDE1F572296D49900F49F5A /* ViewController.swift in Sources */,
 				ABDE1FA42296E3AB00F49F5A /* Coordinates.swift in Sources */,
+				A59695512299505B001AFF9A /* Precipitation.swift in Sources */,
 				ABDE1F8F2296DD1000F49F5A /* City.swift in Sources */,
+				A596954B22994F9D001AFF9A /* Rain.swift in Sources */,
 				ABDE1F952296DF1C00F49F5A /* Main.swift in Sources */,
 				ABDE1FA12296E26D00F49F5A /* Sys.swift in Sources */,
 				ABDE1F872296D7AA00F49F5A /* ViewModel.swift in Sources */,
@@ -366,14 +381,17 @@
 				ABDE1F8C2296DB3C00F49F5A /* Networking.swift in Sources */,
 				ABDE1F9C2296E0D000F49F5A /* Clouds.swift in Sources */,
 				ABDE1F9F2296E1D400F49F5A /* Wind.swift in Sources */,
+				A596954C22994F9D001AFF9A /* Rain.swift in Sources */,
 				ABDE1F962296DF1C00F49F5A /* Main.swift in Sources */,
 				ABDE1F882296D7AA00F49F5A /* ViewModel.swift in Sources */,
 				ABDE1FA22296E26D00F49F5A /* Sys.swift in Sources */,
 				ABDE1F902296DD1000F49F5A /* City.swift in Sources */,
 				ABDE1FA52296E3AB00F49F5A /* Coordinates.swift in Sources */,
 				ABDE1F932296DE4300F49F5A /* List.swift in Sources */,
+				A596954F22995016001AFF9A /* Snow.swift in Sources */,
 				ABDE1F6A2296D49A00F49F5A /* DemoAppTests.swift in Sources */,
 				ABDE1F992296E05100F49F5A /* Weather.swift in Sources */,
+				A59695522299505B001AFF9A /* Precipitation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
